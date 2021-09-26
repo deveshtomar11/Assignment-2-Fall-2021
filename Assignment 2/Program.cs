@@ -222,10 +222,10 @@ namespace DIS_Assignment_2_Fall_2021
 
                 for (int i = 0; i < words.Length; i++)
                 {
-                    // add new alphabet sized int array for each word in the words list
+                    
                     countArray.Add(new int[26]);
 
-                    // count how many character there are with indexing of a: 0 z: 25
+                   
                     foreach (char c in words[i].ToCharArray())
                     {
                         int index = c - 'a';
@@ -234,11 +234,11 @@ namespace DIS_Assignment_2_Fall_2021
 
                 }
 
-                // loop through every character in the alphabet
+               
                 for (int j = 0; j < 26; j++)
                 {
 
-                    // find the minimum amount that each word has in common
+                   
                     int minAmount = int.MaxValue;
                     for (int i = 0; i < words.Length; i++)
                     {
@@ -247,7 +247,7 @@ namespace DIS_Assignment_2_Fall_2021
 
 
 
-                    // add a new string for the minimum common occurances of current letter.
+                   
                     for (int k = 0; k < minAmount; k++)
                     {
                         int charAsInt = 'a' + j;
